@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tabs-container{
+            width: 500px;
+        }
+        .tabs-btn{
+            display: flex;
+        }
+        .tab{
+            width: 30px;
+            border: 1px solid black;
+            border-radius: 10px 10px 0 0;
+            padding: 10px;
+            background-color: pink;
+        }
+        .content{
+            height: 200px;
+            background-color: rgb(255, 237, 240);
+            border: 1px solid black;
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs-container">
+        <div class="tabs-btn">
+            <div class="tab tab01">Tab1</div>
+            <div class="tab tab02">Tab2</div>
+            <div class="tab tab03">Tab3</div>
+        </div>
+        <div class="tabs-contents">
+            <div class="content content1 active">tab01's content</div>
+            <div class="content content2">tab02's content</div>
+            <div class="content content3">tab03's content</div>
+        </div>
+    </div>
+
+    <script src="./tab.js"></script>
+</body>
+</html>
